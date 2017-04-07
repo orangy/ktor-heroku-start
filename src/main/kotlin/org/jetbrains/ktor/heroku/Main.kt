@@ -22,6 +22,7 @@ else
 
 
 fun Application.module() {
+    install(DefaultHeaders)
     install(FreeMarker) {
         templateLoader = ClassTemplateLoader(environment.classLoader, "templates")
     }
@@ -30,6 +31,8 @@ fun Application.module() {
             call.respond(FreeMarkerContent("error.ftl", exception, ""))
         }
     }
+    install(ConditionalHeaders)
+    install(PartialContentSupport)
     routing {
         serveClasspathResources("public")
         get("hello") {
