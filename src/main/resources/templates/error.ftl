@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <#include "header.ftl">
+<#include "header.ftl">
 </head>
 
 <body>
 
-  <#include "nav.ftl">
+<#include "nav.ftl">
 
 <div class="container">
-  ${message}
+    <h2>An error occured</h2>
+    <code>${class}</code>
+    <p>${message}</p>
 </div>
 
 </body>
