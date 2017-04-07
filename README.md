@@ -1,6 +1,6 @@
-# java-getting-started
+# ktor-heroku-start
 
-A barebones Java app, which can easily be deployed to Heroku.
+A barebones Kotlin and Ktor app, which can easily be deployed to Heroku.
 
 This application supports the [Getting Started with Java on Heroku](https://devcenter.heroku.com/articles/getting-started-with-java) article - check it out.
 
