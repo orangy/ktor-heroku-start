@@ -60,7 +60,7 @@ fun Application.module() {
                 model.put("results", output)
 
                 val etag = model.toString().hashCode().toString()
-                call.respond(FreeMarkerContent("index.ftl", model, etag))
+                call.respond(FreeMarkerContent("db.ftl", model, etag))
             }
         }
     }
