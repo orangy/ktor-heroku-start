@@ -9,19 +9,19 @@
 
     <properties>
         <kotlin.version>1.1.1</kotlin.version>
-        <ktor.version>1.1.1</ktor.version>
+        <ktor.version>0.3.1</ktor.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.jetbrains.ktor</groupId>
             <artifactId>ktor-netty</artifactId>
-            <version>0.3.1-SNAPSHOT</version>
+            <version>${ktor.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.ktor</groupId>
             <artifactId>ktor-freemarker</artifactId>
-            <version>0.3.1-SNAPSHOT</version>
+            <version>${ktor.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -75,7 +75,7 @@
                     <appendAssemblyId>false</appendAssemblyId>
                     <archive>
                         <manifest>
-                            <mainClass>Main</mainClass>
+                            <mainClass>org.jetbrains.ktor.heroku.MainKt</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -118,4 +118,10 @@
             </plugin>
         </plugins>
     </build>
+    <repositories>
+        <repository>
+            <id>ktor</id>
+            <url>http://dl.bintray.com/kotlin/ktor</url>
+        </repository>
+    </repositories>
 </project>
