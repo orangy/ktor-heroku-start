@@ -16,7 +16,7 @@
     <h1>Getting Started with Kotlin on Heroku</h1>
     <p>This is a sample Kotlin application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
     <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-java"><span class="glyphicon glyphicon-flash"></span> Getting Started with Java</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/java-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
+    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/orangy/ktor-heroku-start"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
   </div>
 </div>
 <div class="container">
@@ -28,9 +28,9 @@
     <div class="col-md-6">
       <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
       <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/java-getting-started">Heroku Button</a> on the repository.</li>
+        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/orangy/ktor-heroku-start">Heroku Button</a> on the repository.</li>
 
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/java-getting-started/blob/master/pom.xml">pom.xml</a>, creating a slug.</li>
+        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/orangy/ktor-heroku-start/blob/master/pom.xml">pom.xml</a>, creating a slug.</li>
         <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
         <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
       </ul>
@@ -41,8 +41,8 @@
         <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
         <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
         <ul>
-          <li><code>git clone https://github.com/heroku/java-getting-started.git</code> - this will create a local copy of the source code for the app</li>
-          <li><code>cd java-getting-started</code> - change directory into the local source code repository</li>
+          <li><code>git clone https://github.com/orangy/ktor-heroku-start.git</code> - this will create a local copy of the source code for the app</li>
+          <li><code>cd ktor-heroku-start</code> - change directory into the local source code repository</li>
           <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
           <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-java#push-local-changes">deploy changes</a> to Heroku</li>
         </ul>
